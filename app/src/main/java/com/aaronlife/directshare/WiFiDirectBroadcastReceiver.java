@@ -69,7 +69,8 @@ public class WiFiDirectBroadcastReceiver extends BroadcastReceiver
 
                 // WiFi沒有打開，打開WiFi
                 WifiManager wifiManager =
-                    (WifiManager)activity.getSystemService(Context.WIFI_SERVICE);
+                    (WifiManager)activity.getApplicationContext()
+                                 .getSystemService(Context.WIFI_SERVICE);
                 wifiManager.setWifiEnabled(true);
             }
         }
