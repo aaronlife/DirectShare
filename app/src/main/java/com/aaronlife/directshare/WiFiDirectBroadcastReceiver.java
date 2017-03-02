@@ -109,8 +109,6 @@ public class WiFiDirectBroadcastReceiver extends BroadcastReceiver
         }
         else if(WifiP2pManager.WIFI_P2P_CONNECTION_CHANGED_ACTION.equals(action))
         {
-
-    1
             Log.d(Utils.LOGTAG, "WIFI_P2P_CONNECTION_CHANGED_ACTION");
 
             if (manager == null) return;
@@ -187,7 +185,6 @@ public class WiFiDirectBroadcastReceiver extends BroadcastReceiver
                 });
             }
         }
-    p
         else if(WifiP2pManager.WIFI_P2P_THIS_DEVICE_CHANGED_ACTION.equals(action))
         {
             Log.d(Utils.LOGTAG, "WIFI_P2P_THIS_DEVICE_CHANGED_ACTION");
